@@ -1,16 +1,31 @@
 module BCD_TO_7Seg_TB;
 
     reg [3:0] BCD;
-    wire [6:0] Out,enable;
-    integer i;
+    wire [6:0] Out;
     
     BCD_to_7Segment uut (.BCD(BCD),.Out(Out));
 
     initial begin
-        for(i = 0;i < 16;i = i+1) //run loop for 0 to 15.
-        begin
-            BCD = i; 
-            #10;
-        end     
+        BCD = 0; 
+        #100;
+        BCD = 1; 
+        #100;
+        BCD = 2; 
+        #100;
+        BCD = 3; 
+        #100;
+        BCD = 4; 
+        #100;
+        BCD = 5; 
+        #100;
+        BCD = 6; 
+        #100;
+        BCD = 7; 
+        #100;
+        BCD = 8; 
+        #100;
+        BCD = 9; 
+        #100;
+             
     end  
 endmodule

@@ -1,9 +1,8 @@
 module BCD_to_7Segment(
     input [3:0] BCD,
-    input enable,
     output reg[6:0] Out
     );
-    always @(enable) 
+    always @(BCD) 
     begin
     case(BCD)
      0 : Out = 7'b1111110;

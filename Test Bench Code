@@ -6,25 +6,25 @@ module BCD_TO_7Seg_TB;
     BCD_to_7Segment uut (.BCD(BCD),.Out(Out));
 
     initial begin
-        BCD = 0000; 
+        BCD = 4'b0000; 
         #100;
-        BCD = 0001; 
+        BCD = 4'b0001; 
         #100;
-        BCD = 0010; 
+        BCD = 4'b0010; 
         #100;
-        BCD = 0011; 
+        BCD = 4'b0011; 
         #100;
-        BCD = 0100; 
+        BCD = 4'b0100; 
         #100;
-        BCD = 0101; 
+        BCD = 4'b0101; 
         #100;
-        BCD = 0110; 
+        BCD = 4'b0110; 
         #100;
-        BCD = 0111; 
+        BCD = 4'b0111; 
         #100;
-        BCD = 1000; 
+        BCD = 4'b1000; 
         #100;
-        BCD = 1001; 
+        BCD = 4'b1001; 
         #100;
              
     end  
